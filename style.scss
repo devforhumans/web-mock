@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+header {
+  background-color: #3CB35A;
+  height: 90px;
+
+  .content {
+    display: flex;
+
+    #site-name {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 33px;
+
+      color: white;
+      align-self: center;
+    }
+  }
+}
+
+section#hero {
+  background-color: #635E79;
+  height: 221px;
+
+  .content {
+
+    h2 {
+      padding-top: 15px;
+      color: white;
+      font-size: 36px;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+
+    #search-box {
+      padding-top: 15px;
+
+      input {
+        display: block;
+        width: calc(100% - 30px - 6px);
+        border: 3px solid white;
+        background-color: #635E79;
+        padding: 15px;
+        font-size: 21px;
+        border-radius: 6px;
+        color: white;
+        font-family: 'Merriweather Sans', sans-serif;
+
+        &::placeholder {
+          color: white;
+          font-style: italic;
+
+
+        }
+      }
+    }
+  }
+  @media (min-width: 900px){
+    height: 420px;
+    .content{
+      background: url('woman.png');
+      background-repeat: no-repeat;
+      background-position: top right;
+
+      h2#tag-line, form#search-box{
+        width: 420px;
+      }
+      h2{
+        padding-top: 90px;
+      }
+    }
+  }
+}
+
+main {
+
+  section.article-collection {
+    h2 {
+      padding-top: 30px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 36px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        a {
+          padding: 15px;
+          display: block;
+          background-color: #eee;
+          text-decoration: none;
+          margin-top: 15px;
+          color: black;
+          border-radius: 6px;
+
+          h3 {
+
+            font-size: 24px;
+            font-family: 'Bebas Neue', sans-serif;
+          }
+
+          .description {
+            font-size: 16px;
+            padding-top: 9px;
+            font-family: 'Merriweather Sans', sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
