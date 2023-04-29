@@ -20,8 +20,11 @@ header .content {
 header .content #site-name {
   font-family: "Bebas Neue", sans-serif;
   font-size: 33px;
-  color: white;
   align-self: center;
+}
+header .content #site-name a {
+  color: white;
+  text-decoration: none;
 }
 
 section#hero {

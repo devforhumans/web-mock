@@ -21,8 +21,12 @@ header {
       font-family: "Bebas Neue", sans-serif;
       font-size: 33px;
 
-      color: white;
       align-self: center;
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }
